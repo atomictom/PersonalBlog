@@ -2,40 +2,56 @@
 <html>
 	<head>
 		<title>Thomas's Blog</title>
+		<!-- Remove the protocol when this goes live -->
+		<!-- jQuery -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<!-- Bootstrap stuff -->
 		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
 		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+		<!-- My Stuff! -->
+		<link href="/style.css" rel="stylesheet">
 		<style type="text/css">
-		body{
-			background-color: #1b1d23;
-		}
-		h1{
-			color: #000;
-		}
-		.main-content{
-			background-color:#ccc;
-		}
-		.sub-content{
-			background-color:#ccc;
-		}
-		.red{
-			background: red;
-		}
-		.blue{
-			background: blue;
-		}
-		.green{
-			background: green;
-		}
+			body{
+				background-color: #080B0F;
+				color: #CCCCCC;
+				margin: 3em;
+			}
+			h1{
+				color: #2C75FF;
+			}
+			.main-content{
+				background-color:#ccc;
+			}
+			.sub-content{
+				background-color:#ccc;
+			}
+			.red{
+				background: red;
+			}
+			.blue{
+				background: blue;
+			}
+			.green{
+				background: green;
+			}
+			.fancy-box{
+				background: #425955;
+				padding: 2em;
+				margin-top: 2em;
+				border: 10px;
+				border-radius: 10px;
+				box-shadow: 3px 3px black;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="container-fluid">
 			<div class="row-fluid header">
 				<h1>Tom's Blog</h1>
+				<h5>Discussions on coding, education, thought, and more!</h5>
 			</div>
 			<div class="row-fluid featured">
-				<div class="span12">
+				<div class="span9 fancy-box">
 					<h2 class="featured-title">Post Title</h2>
 					<p class="featured-summary">
 						A summary/about of the talk goes here
@@ -46,16 +62,19 @@
 						HA! You blinked! I win! =)
 					</p> 
 				</div>
+				<div class="span3 about-me red fancy-box">
+					I'm Thomas!
+				</div>
 			</div>
 			<div class="row-fluid other-content">
-				<div class="span4 categories red">
+				<div class="span4 categories red fancy-box">
 					This little box is for blog post categories (i.e. "Posts about: Cats, Programming, etc.")
 				</div>
-				<div class="span4 projects blue">
+				<div class="span4 projects blue fancy-box">
 					This little box is for projects, I guess
 				</div>
-				<div class="span4 about-me green">
-					This is a link for about me
+				<div class="span4 green fancy-box">
+					This is something undecided
 				</div>
 			</div>
 		</div>

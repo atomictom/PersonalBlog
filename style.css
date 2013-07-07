@@ -1,0 +1,23 @@
+body{
+	background-color: #1b1d23;
+	color: #EEEEEE;
+	margin: 3em;
+}
+h1{
+	color: #2C75FF;
+}
+.main-content{
+	background-color:#ccc;
+}
+.sub-content{
+	background-color:#ccc;
+}
+.red{
+	background: red;
+}
+.blue{
+	background: blue;
+}
+.green{
+	background: green;
+}

@@ -9,7 +9,8 @@
 		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
 		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 		<!-- My Stuff! -->
-		<link href="/style.css" rel="stylesheet">
+		<link href="common-style.css" rel="stylesheet">
+		<script src="common-script.js" type="text/javascript"></script>
 		<style type="text/css">
 			body{
 				background-color: #080B0F;
@@ -18,12 +19,6 @@
 			}
 			h1{
 				color: #2C75FF;
-			}
-			.main-content{
-				background-color:#ccc;
-			}
-			.sub-content{
-				background-color:#ccc;
 			}
 			.red{
 				background: red;
@@ -36,13 +31,17 @@
 			}
 			.fancy-box{
 				background: #425955;
-				padding: 2em;
+				padding: 1em;
 				margin-top: 2em;
-				border: 10px;
 				border-radius: 10px;
-				box-shadow: 3px 3px black;
+				box-shadow: 3px 3px 5px #06070A;
 			}
 		</style>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".featured").equalHeights()
+			})
+		</script>
 	</head>
 	<body>
 		<div class="container-fluid">

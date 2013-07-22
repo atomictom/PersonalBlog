@@ -12,45 +12,54 @@
 		<link href="common-style.css" rel="stylesheet">
 		<script src="common-script.js" type="text/javascript"></script>
 		<style type="text/css">
-			body{
+			html,body{
+				height:100%;
 				background-color: #080B0F;
 				color: #CCCCCC;
-				margin: 3em;
+				margin: 1.5em 3em;
+				overflow:hidden;
 			}
 			h1{
 				color: #2C75FF;
 			}
-			.red{
-				background: red;
-			}
-			.blue{
-				background: blue;
-			}
-			.green{
-				background: green;
+			.first-row .fancy-box{
+				min-height: 16em !important;
 			}
 			.fancy-box{
+				/*height:auto;*/
+				box-sizing:border-box;
+				min-height: 12em !important;
 				background: #425955;
 				padding: 1em;
 				margin-top: 2em;
 				border-radius: 10px;
-				box-shadow: 3px 3px 5px #06070A;
+				box-shadow: 1px 1px 6px #06070A;
+				overflow: hidden;
 			}
+			.about-me{
+				padding:0;
+			}
+			.about-me img{
+				min-height:inherit;
+			}
+/*			.rounded-image{
+				border-radius: 10px;
+				overflow:hidden;
+			}*/
 		</style>
 		<script type="text/javascript">
 			$(document).ready(function(){
-				$(".featured").equalHeights()
 			})
 		</script>
 	</head>
 	<body>
 		<div class="container-fluid">
-			<div class="row-fluid header">
+			<header class="row-fluid">
 				<h1>Tom's Blog</h1>
 				<h5>Discussions on coding, education, thought, and more!</h5>
-			</div>
-			<div class="row-fluid featured">
-				<div class="span9 fancy-box">
+			</header>
+			<div class="row-fluid first-row"><!-- <div class="table-row"> -->
+				<div class="span9 fancy-box featured">
 					<h2 class="featured-title">Post Title</h2>
 					<p class="featured-summary">
 						A summary/about of the talk goes here
@@ -61,18 +70,18 @@
 						HA! You blinked! I win! =)
 					</p> 
 				</div>
-				<div class="span3 about-me red fancy-box">
-					I'm Thomas!
+				<div class="span3 about-me fancy-box">
+					<img class="rounded-image" src="about-me/pictures/smiling_bike_cropped.jpg" alt="Me">
 				</div>
-			</div>
+			</div><!-- </div> -->
 			<div class="row-fluid other-content">
-				<div class="span4 categories red fancy-box">
+				<div class="span4 categories fancy-box">
 					This little box is for blog post categories (i.e. "Posts about: Cats, Programming, etc.")
 				</div>
-				<div class="span4 projects blue fancy-box">
+				<div class="span4 projects fancy-box">
 					This little box is for projects, I guess
 				</div>
-				<div class="span4 green fancy-box">
+				<div class="span4 fancy-box">
 					This is something undecided
 				</div>
 			</div>
